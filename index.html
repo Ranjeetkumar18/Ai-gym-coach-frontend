@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI GYM Coach — Real-Time AI Fitness Trainer</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+  <!-- Background decorations -->
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+
+      <a href="#" class="brand">
+        <span class="brand-icon">✦</span>
+        <span>AI GYM <strong>COACH</strong></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="https://ai-gym-trainer-xh7iguyzqxuokcyepnd7by.streamlit.app/"
+         target="_blank"
+         class="nav-button">
+        Try Live →
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            AI-POWERED FITNESS COACH
+          </div>
+
+          <h1>
+            Train smarter.
+            <span>Move better.</span>
+            <br />
+            Get stronger.
+          </h1>
+
+          <p class="hero-description">
+            Real-time computer vision that analyzes your exercise form,
+            counts your reps and gives intelligent AI coaching while you train.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              href="https://ai-gym-trainer-xh7iguyzqxuokcyepnd7by.streamlit.app/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Start Training
+              <span>→</span>
+            </a>
+
+            <a href="#demo" class="btn btn-secondary">
+              Watch Demo
+              <span>▶</span>
+            </a>
+
+          </div>
+
+          <div class="trust-row">
+
+            <div class="trust-item">
+              <div class="trust-icon blue">⌁</div>
+              <div>
+                <strong>Real-Time</strong>
+                <small>Pose analysis</small>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon purple">◉</div>
+              <div>
+                <strong>AI Feedback</strong>
+                <small>Smart coaching</small>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon green">✓</div>
+              <div>
+                <strong>5+ Exercises</strong>
+                <small>Supported</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO PRODUCT CARD -->
+        <div class="hero-visual">
+
+          <div class="floating-badge badge-top">
+            <span class="mini-dot"></span>
+            AI Coach Active
+          </div>
+
+          <div class="coach-card">
+
+            <div class="coach-header">
+              <div>
+                <span class="eyebrow">LIVE SESSION</span>
+                <h3>Squat Analysis</h3>
+              </div>
+
+              <span class="live-badge">
+                <span></span> LIVE
+              </span>
+            </div>
+
+            <div class="workout-preview">
+
+              <div class="person-placeholder">
+                <div class="pose-circle"></div>
+                <div class="pose-body"></div>
+
+                <div class="pose-line line-a"></div>
+                <div class="pose-line line-b"></div>
+                <div class="pose-line line-c"></div>
+
+              </div>
+
+              <div class="analysis-label">
+                <span class="analysis-dot"></span>
+                Pose detected
+              </div>
+
+            </div>
+
+            <div class="coach-stats">
+
+              <div class="stat-box">
+                <span>REPS</span>
+                <strong>12</strong>
+              </div>
+
+              <div class="stat-box">
+                <span>FORM</span>
+                <strong class="success-text">95%</strong>
+              </div>
+
+              <div class="stat-box">
+                <span>SET</span>
+                <strong>02/03</strong>
+              </div>
+
+            </div>
+
+            <div class="ai-feedback">
+
+              <div class="ai-avatar">✦</div>
+
+              <div>
+                <span>AI COACH</span>
+                <p>
+                  Great form! Keep your chest upright and maintain your depth.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <span class="sound-icon">♪</span>
+            Voice Feedback
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- METRICS -->
+    <section class="metrics-section">
+
+      <div class="container metrics-grid">
+
+        <div class="metric-card">
+          <span class="metric-icon blue-bg">⚡</span>
+          <div>
+            <strong>Real-Time</strong>
+            <small>Pose Detection</small>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-icon purple-bg">✦</span>
+          <div>
+            <strong>AI Powered</strong>
+            <small>Form Feedback</small>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-icon cyan-bg">◉</span>
+          <div>
+            <strong>Voice Coach</strong>
+            <small>Audio Guidance</small>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-icon green-bg">✓</span>
+          <div>
+            <strong>Rep Counter</strong>
+            <small>Automatic Tracking</small>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-badge">
+            FEATURES
+          </span>
+
+          <h2>
+            Your personal trainer,
+            <span>powered by AI.</span>
+          </h2>
+
+          <p>
+            Everything you need to train with better form, smarter feedback
+            and measurable progress.
+          </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <article class="feature-card large-card">
+
+            <div class="feature-icon-box blue-icon">
+              ◉
+            </div>
+
+            <span class="card-badge blue-badge">
+              COMPUTER VISION
+            </span>
+
+            <h3>Real-Time Pose Detection</h3>
+
+            <p>
+              Analyze body position and movement using computer vision
+              while you exercise.
+            </p>
+
+            <div class="mini-visual">
+              <span class="joint j1"></span>
+              <span class="joint j2"></span>
+              <span class="joint j3"></span>
+              <span class="joint-line jl1"></span>
+              <span class="joint-line jl2"></span>
+            </div>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="feature-icon-box purple-icon">
+              ✦
+            </div>
+
+            <span class="card-badge purple-badge">
+              AI FEEDBACK
+            </span>
+
+            <h3>Smart Form Correction</h3>
+
+            <p>
+              Detect common form problems and receive actionable
+              coaching feedback.
+            </p>
+
+            <div class="feedback-pill">
+              ✓ Correct your posture
+            </div>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="feature-icon-box cyan-icon">
+              ♪
+            </div>
+
+            <span class="card-badge cyan-badge">
+              VOICE COACH
+            </span>
+
+            <h3>Audio Guidance</h3>
+
+            <p>
+              Hear coaching feedback without stopping your workout.
+            </p>
+
+            <div class="sound-wave">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="feature-icon-box green-icon">
+              ↗
+            </div>
+
+            <span class="card-badge green-badge">
+              PROGRESS
+            </span>
+
+            <h3>Rep & Set Tracking</h3>
+
+            <p>
+              Automatically track repetitions, sets and workout progress.
+            </p>
+
+            <div class="progress-demo">
+              <div class="progress-label">
+                <span>Workout Progress</span>
+                <strong>72%</strong>
+              </div>
+
+              <div class="progress-bar">
+                <span></span>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="section light-section" id="how-it-works">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <span class="section-badge">
+            HOW IT WORKS
+          </span>
+
+          <h2>
+            From camera to
+            <span>coaching.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+          <div class="step">
+
+            <div class="step-number">01</div>
+
+            <div class="step-icon">📷</div>
+
+            <h3>Start Camera</h3>
+
+            <p>
+              Open the trainer and allow camera access.
+            </p>
+
+          </div>
+
+
+          <div class="step-line"></div>
+
+
+          <div class="step">
+
+            <div class="step-number">02</div>
+
+            <div class="step-icon">🧠</div>
+
+            <h3>AI Analyzes</h3>
+
+            <p>
+              Computer vision tracks your body movement.
+            </p>
+
+          </div>
+
+
+          <div class="step-line"></div>
+
+
+          <div class="step">
+
+            <div class="step-number">03</div>
+
+            <div class="step-icon">🎯</div>
+
+            <h3>Get Feedback</h3>
+
+            <p>
+              AI detects form issues and provides feedback.
+            </p>
+
+          </div>
+
+
+          <div class="step-line"></div>
+
+
+          <div class="step">
+
+            <div class="step-number">04</div>
+
+            <div class="step-icon">🔊</div>
+
+            <h3>Hear Your Coach</h3>
+
+            <p>
+              Receive real-time voice coaching while training.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DEMO -->
+    <section class="section" id="demo">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <span class="section-badge">
+            LIVE DEMO
+          </span>
+
+          <h2>
+            See your AI coach
+            <span>in action.</span>
+          </h2>
+
+          <p>
+            Watch how the system detects movement and provides
+            real-time exercise feedback.
+          </p>
+
+        </div>
+
+
+        <div class="video-card">
+
+          <div class="video-header">
+
+            <div class="video-title">
+              <span class="live-dot"></span>
+              AI GYM TRAINER — DEMO
+            </div>
+
+            <span class="video-badge">
+              REAL-TIME
+            </span>
+
+          </div>
+
+          <video
+            src="videos/video.mp4"
+            controls
+            playsinline
+          ></video>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section">
+
+      <div class="container">
+
+        <div class="cta-card">
+
+          <div class="cta-content">
+
+            <span class="section-badge white-badge">
+              READY TO TRAIN?
+            </span>
+
+            <h2>
+              Your next rep
+              <span>starts here.</span>
+            </h2>
+
+            <p>
+              Let AI watch your form, count your reps and coach
+              you through every workout.
+            </p>
+
+            <a
+              href="https://ai-realtime-gym-coach.streamlit.app/"
+              target="_blank"
+              class="btn btn-white"
+            >
+              Try AI GYM Coach →
+            </a>
+
+          </div>
+
+          <div class="cta-orbit">
+            <div class="orbit-center">✦</div>
+            <div class="orbit-ring"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+
+      <div class="container contact-inner">
+
+        <span class="section-badge">
+          CONNECT
+        </span>
+
+        <h2>
+          Built with AI.
+          <span>Designed for movement.</span>
+        </h2>
+
+        <p>
+          Explore the project, source code and development journey.
+        </p>
+
+        <div class="social-buttons">
+
+          <a href="https://www.linkedin.com/in/ranjeet96/" class="social-button">
+            <span>in</span>
+            LinkedIn
+          </a>
+
+          <a href="https://github.com/Ranjeetkumar18" class="social-button">
+            <span>⌘</span>
+            GitHub
+          </a>
+
+          <a href="patelranjeet1212@email.com" class="social-button">
+            <span>✉</span>
+            Email
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+    <div class="container footer-inner">
+
+      <span>
+        © 2026 AI GYM Coach
+      </span>
+
+      <span>
+        Real-Time AI Fitness Assistant
+      </span>
+
+    </div>
+  </footer>
+
+
+</body>
+</html>
